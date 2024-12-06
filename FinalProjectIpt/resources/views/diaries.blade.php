@@ -11,9 +11,6 @@
 
 <body>
 
-
-
-
   <div class="buttons">
     <button type="button" class="class1" onclick="openNav()">CUSTOM</button><br>
     <button type="button" class="class2" onclick="openNav1()"> BACKGROUND COLOR</button><br>
