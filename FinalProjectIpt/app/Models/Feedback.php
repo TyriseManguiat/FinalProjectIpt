@@ -1,19 +1,20 @@
 <?php
-// app/Models/User.php
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class Feedback extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'username', 'email', 'password', 'startDate',
-    ];
-
-    protected $hidden = [
-        'password',
+        'user_id',
+        'email',
+        'age',
+        'feedback_type',
+        'remark',
+        'timestamp',
     ];
 }
