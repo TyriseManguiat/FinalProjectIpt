@@ -1,17 +1,16 @@
 {
-    "css/app.css": {
+  "css/app.css": {
       "file": "css/app-abcdef123.css",
       "src": "resources/css/app.css",
       "isEntry": true
-    },
-    "js/app.js": {
+  },
+  "js/app.js": {
       "file": "js/app-abcdef123.js",
       "src": "resources/js/app.js",
       "isEntry": true
-    },
-    "js/vendor.js": {
+  },
+  "js/vendor.js": {
       "file": "js/vendor-abcdef123.js",
       "src": "resources/js/vendor.js"
-    }
   }
-  
+}

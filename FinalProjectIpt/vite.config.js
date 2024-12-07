@@ -6,20 +6,10 @@ import path from 'path';
 export default defineConfig({
     plugins: [
         laravel({
-            input: [
-                'resources/css/app.css',
-                'resources/js/app.js',
-            ],
+            input: ['resources/css/app.css', 'resources/js/app.js'],
             refresh: true,
         }),
-        vue({
-            template: {
-                transformAssetUrls: {
-                    base: null,
-                    includeAbsolute: false,
-                },
-            },
-        }),
+        vue(),
     ],
     resolve: {
         alias: {
@@ -28,7 +18,8 @@ export default defineConfig({
         },
     },
     build: {
-        outDir: 'public/build',  // Ensure output goes to the 'public/build' directory
-        manifest: true,  // This will generate manifest.json
+        outDir: 'public/build', // Ensure output files go to 'public/build'
+        manifest: true,         // Generate manifest.json
+        sourcemap: true,        // Optional: Generate source maps for debugging
     },
 });
